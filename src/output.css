@@ -186,6 +186,9 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
+  .mb-\[0px\] {
+    margin-bottom: 0px;
+  }
   .mb-\[10px\] {
     margin-bottom: 10px;
   }
@@ -201,6 +204,12 @@
   .ml-\[20px\] {
     margin-left: 20px;
   }
+  .ml-\[150px\] {
+    margin-left: 150px;
+  }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -212,9 +221,6 @@
   }
   .w-\[40\%\] {
     width: 40%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -240,9 +246,6 @@
   .items-center {
     align-items: center;
   }
-  .justify-around {
-    justify-content: space-around;
-  }
   .justify-between {
     justify-content: space-between;
   }
@@ -266,9 +269,6 @@
   .bg-\[\#F0F0F0\] {
     background-color: #F0F0F0;
   }
-  .bg-\[red\] {
-    background-color: red;
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -287,6 +287,9 @@
   .py-\[30px\] {
     padding-block: 30px;
   }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -298,6 +301,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-white {
     color: var(--color-white);
@@ -334,14 +341,29 @@
       margin-top: 150px;
     }
   }
-  .lg\:mb-\[10px\] {
-    @media (width >= 64rem) {
-      margin-bottom: 10px;
-    }
-  }
   .lg\:ml-0 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:ml-\[0px\] {
+    @media (width >= 64rem) {
+      margin-left: 0px;
+    }
+  }
+  .lg\:ml-\[150px\] {
+    @media (width >= 64rem) {
+      margin-left: 150px;
+    }
+  }
+  .lg\:ml-\[400px\] {
+    @media (width >= 64rem) {
+      margin-left: 400px;
+    }
+  }
+  .lg\:ml-\[450px\] {
+    @media (width >= 64rem) {
+      margin-left: 450px;
     }
   }
   .lg\:flex {
@@ -367,16 +389,6 @@
   .lg\:w-\[60\%\] {
     @media (width >= 64rem) {
       width: 60%;
-    }
-  }
-  .lg\:w-\[70\%\] {
-    @media (width >= 64rem) {
-      width: 70%;
-    }
-  }
-  .lg\:w-\[80\%\] {
-    @media (width >= 64rem) {
-      width: 80%;
     }
   }
   .lg\:w-\[100\%\] {
