@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -181,17 +180,20 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
-  .mt-\[50\] {
-    margin-top: 50;
-  }
   .mt-\[50px\] {
     margin-top: 50px;
   }
   .mt-\[100px\] {
     margin-top: 100px;
   }
-  .mt-\[150px\] {
-    margin-top: 150px;
+  .mb-\[10px\] {
+    margin-bottom: 10px;
+  }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
   }
   .mb-\[50px\] {
     margin-bottom: 50px;
@@ -208,14 +210,11 @@
   .table {
     display: table;
   }
-  .w-90 {
-    width: calc(var(--spacing) * 90);
+  .w-\[40\%\] {
+    width: 40%;
   }
-  .w-\[60\%\] {
-    width: 60%;
-  }
-  .w-\[80\%0\] {
-    width: 80%0;
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -241,8 +240,14 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -261,17 +266,14 @@
   .bg-\[\#F0F0F0\] {
     background-color: #F0F0F0;
   }
+  .bg-\[red\] {
+    background-color: red;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .p-\[20px\] {
-    padding: 20px;
-  }
-  .px-\[10px\] {
-    padding-inline: 10px;
   }
   .px-\[20px\] {
     padding-inline: 20px;
@@ -281,9 +283,6 @@
   }
   .py-\[10px\] {
     padding-block: 10px;
-  }
-  .py-\[20px\] {
-    padding-block: 20px;
   }
   .py-\[30px\] {
     padding-block: 30px;
@@ -299,10 +298,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-white {
     color: var(--color-white);
@@ -339,6 +334,11 @@
       margin-top: 150px;
     }
   }
+  .lg\:mb-\[10px\] {
+    @media (width >= 64rem) {
+      margin-bottom: 10px;
+    }
+  }
   .lg\:ml-0 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 0);
@@ -354,9 +354,9 @@
       display: none;
     }
   }
-  .lg\:w-0 {
+  .lg\:w-\[40\%\] {
     @media (width >= 64rem) {
-      width: calc(var(--spacing) * 0);
+      width: 40%;
     }
   }
   .lg\:w-\[50\%\] {
@@ -369,6 +369,11 @@
       width: 60%;
     }
   }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
+    }
+  }
   .lg\:w-\[80\%\] {
     @media (width >= 64rem) {
       width: 80%;
@@ -377,11 +382,6 @@
   .lg\:w-\[100\%\] {
     @media (width >= 64rem) {
       width: 100%;
-    }
-  }
-  .lg\:w-\[100\] {
-    @media (width >= 64rem) {
-      width: 100;
     }
   }
   .lg\:flex-row {
